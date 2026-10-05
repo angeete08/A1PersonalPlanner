@@ -1,0 +1,16 @@
+{
+    "remote.portsAttributes": {
+        "8000-8009": {
+            "onAutoForward": "silent"
+        },
+        "8010": {
+            "label": "Planner frontend",
+            "onAutoForward": "openBrowser",
+            "protocol": "http"
+        },
+        "8011": {
+            "label": "Planner API",
+            "onAutoForward": "silent"
+        }
+    }
+}

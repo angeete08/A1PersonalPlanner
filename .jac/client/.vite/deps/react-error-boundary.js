@@ -1,10 +1,10 @@
 "use client";
 import {
   require_react
-} from "./chunk-YUY53GMT.js";
+} from "./chunk-UI7CYM7W.js";
 import {
   __toESM
-} from "./chunk-26MGONGX.js";
+} from "./chunk-ATIRDPC2.js";
 
 // node_modules/react-error-boundary/dist/react-error-boundary.development.esm.js
 var import_react = __toESM(require_react());

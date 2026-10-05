@@ -10,6 +10,9 @@ entry-point = "main.jac"
 kind = "mobile"
 path = "mobile"
 
+[serve]
+port = 8010
+
 [dependencies.npm]
 react-native = "latest"
 react-native-web = "latest"
