@@ -47,7 +47,7 @@ function App() {
   const setNew_due_at = __jacS_new_due_at.set;
   useEffect(() => {
     (async () => {
-      __jacS_tasks.set(await __jacCallFunction("get_tasks", {}, {"contract": "[\"\",\"main\",\"func\",\"get_tasks\"]"}));
+      __jacS_tasks.set(await __jacCallFunction("get_tasks", {}, {"contract": "[\"a1personalplanner\",\"main.jac\",\"func\",\"get_tasks\"]"}));
     })();
   }, []);
   function handle_name_change(e) {
@@ -61,14 +61,14 @@ function App() {
   }
   async function handle_add() {
     if ((__jacS_new_name.val.trim() !== "")) {
-      __jacS_tasks.set(await __jacCallFunction("add_task", {"name": __jacS_new_name.val.trim(), "description": __jacS_new_desc.val.trim(), "due_at": __jacS_new_due_at.val}, {"contract": "[\"\",\"main\",\"func\",\"add_task\"]"}));
+      __jacS_tasks.set(await __jacCallFunction("add_task", {"name": __jacS_new_name.val.trim(), "description": __jacS_new_desc.val.trim(), "due_at": __jacS_new_due_at.val}, {"contract": "[\"a1personalplanner\",\"main.jac\",\"func\",\"add_task\"]"}));
       __jacS_new_name.set("");
       __jacS_new_desc.set("");
       __jacS_new_due_at.set("");
     }
   }
   async function handle_toggle(task_id) {
-    __jacS_tasks.set(await __jacCallFunction("toggle_task_status", {"task_id": task_id}, {"contract": "[\"\",\"main\",\"func\",\"toggle_task_status\"]"}));
+    __jacS_tasks.set(await __jacCallFunction("toggle_task_status", {"task_id": task_id}, {"contract": "[\"a1personalplanner\",\"main.jac\",\"func\",\"toggle_task_status\"]"}));
   }
   return __jacJsx("main", {"class": "planner-shell"}, [__jacJsx("header", {"class": "page-header"}, [__jacJsx("p", {"class": "eyebrow"}, ["PERSONAL PLANNER"]), __jacJsx("div", {"class": "heading-row"}, [__jacJsx("div", {}, [__jacJsx("h1", {}, ["Your day, in focus."]), __jacJsx("p", {"class": "page-intro"}, ["A little clarity for everything on your list."])]), __jacJsx("div", {"class": "task-count"}, [__jacJsx("strong", {}, [String(__jacS_tasks.val.length)]), __jacJsx("span", {}, [((__jacS_tasks.val.length === 1) ? "task" : "tasks")])])])]), __jacJsx("section", {"class": "composer", "aria-label": "Add a task"}, [__jacJsx("div", {"class": "section-heading"}, [__jacJsx("span", {"class": "section-mark"}, ["+"]), __jacJsx("div", {}, [__jacJsx("h2", {}, ["Make a plan"]), __jacJsx("p", {}, ["Get the next thing out of your head and onto the list."])])]), __jacJsx("div", {"class": "form-grid"}, [__jacJsx("label", {"class": "field field-name"}, [__jacJsx("span", {}, ["Task"]), __jacJsx("input", {"type": "text", "placeholder": "e.g. Prepare project notes", "value": __jacS_new_name.val, "onChange": handle_name_change}, [])]), __jacJsx("label", {"class": "field field-date"}, [__jacJsx("span", {}, ["Due date"]), __jacJsx("input", {"type": "date", "value": __jacS_new_due_at.val, "onChange": handle_due_change}, [])]), __jacJsx("label", {"class": "field field-description"}, [__jacJsx("span", {}, ["Details ", __jacJsx("em", {}, ["Optional"])]), __jacJsx("input", {"type": "text", "placeholder": "Add a note or a useful detail", "value": __jacS_new_desc.val, "onChange": handle_desc_change}, [])]), __jacJsx("button", {"class": "add-button", "onClick": handle_add}, ["Add task ", __jacJsx("span", {}, ["+"])])])]), __jacJsx("section", {"class": "task-section", "aria-label": "Your tasks"}, [__jacJsx("div", {"class": "list-heading"}, [__jacJsx("h2", {}, ["Tasks"]), __jacJsx("span", {}, [__jacS_tasks.val.length, " ", ((__jacS_tasks.val.length === 1) ? "item" : "items")])]), __jacJsx("div", {"class": "task-list"}, [(() => {
     let __jac_view_kids_1 = [false];
@@ -91,5 +91,5 @@ function App() {
 const app = App;
 /*jac:refresh-boundary*/;
 export {TaskItem, app};
-if (typeof globalThis !== "undefined") { if (!globalThis.__jacEndpointEffects__) globalThis.__jacEndpointEffects__ = {}; Object.assign(globalThis.__jacEndpointEffects__, {"[\"\",\"main\",\"func\",\"get_tasks\"]": {"app": "", "module": "main", "kind": "func", "name": "get_tasks", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": []}, "[\"\",\"main\",\"func\",\"add_task\"]": {"app": "", "module": "main", "kind": "func", "name": "add_task", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": ["Task"]}, "[\"\",\"main\",\"func\",\"toggle_task_status\"]": {"app": "", "module": "main", "kind": "func", "name": "toggle_task_status", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": []}}); };
+if (typeof globalThis !== "undefined") { if (!globalThis.__jacEndpointEffects__) globalThis.__jacEndpointEffects__ = {}; Object.assign(globalThis.__jacEndpointEffects__, {"[\"a1personalplanner\",\"main.jac\",\"func\",\"get_tasks\"]": {"app": "a1personalplanner", "module": "main.jac", "kind": "func", "name": "get_tasks", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": []}, "[\"a1personalplanner\",\"main.jac\",\"func\",\"add_task\"]": {"app": "a1personalplanner", "module": "main.jac", "kind": "func", "name": "add_task", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": ["Task"]}, "[\"a1personalplanner\",\"main.jac\",\"func\",\"toggle_task_status\"]": {"app": "a1personalplanner", "module": "main.jac", "kind": "func", "name": "toggle_task_status", "reads": ["*"], "writes": ["*"], "assumptions": [], "unknown": true, "observed_tags": []}}); };
 //# sourceMappingURL=main.js.map

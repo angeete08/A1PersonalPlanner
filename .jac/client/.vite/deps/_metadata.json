@@ -1,0 +1,76 @@
+{
+  "hash": "d644dc86",
+  "configHash": "26da906e",
+  "lockfileHash": "23b95476",
+  "browserHash": "d5911099",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "6c815e95",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "c29ff9e7",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "ddc3b1b7",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "ea5f1859",
+      "needsInterop": true
+    },
+    "@tanstack/react-form": {
+      "src": "../../node_modules/@tanstack/react-form/dist/esm/index.js",
+      "file": "@tanstack_react-form.js",
+      "fileHash": "84c22cc5",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "d1bdbd35",
+      "needsInterop": true
+    },
+    "react-error-boundary": {
+      "src": "../../node_modules/react-error-boundary/dist/react-error-boundary.development.esm.js",
+      "file": "react-error-boundary.js",
+      "fileHash": "f9f0039c",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "fc62e073",
+      "needsInterop": false
+    },
+    "zod": {
+      "src": "../../node_modules/zod/index.js",
+      "file": "zod.js",
+      "fileHash": "cb210b3a",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-FVA2N2Y2": {
+      "file": "chunk-FVA2N2Y2.js"
+    },
+    "chunk-MIR64CGG": {
+      "file": "chunk-MIR64CGG.js"
+    },
+    "chunk-UI7CYM7W": {
+      "file": "chunk-UI7CYM7W.js"
+    },
+    "chunk-ATIRDPC2": {
+      "file": "chunk-ATIRDPC2.js"
+    }
+  }
+}
