@@ -10,6 +10,10 @@ entry-point = "main.jac"
 kind = "mobile"
 path = "mobile"
 
+[apps.cli]
+kind = "cli"
+path = "cli"
+
 [serve]
 port = 8010
 

@@ -1,76 +1,85 @@
 {
-  "hash": "04c1c6c8",
-  "configHash": "f5ce2edb",
+  "hash": "af0ea7f1",
+  "configHash": "289ae571",
   "lockfileHash": "89d156f8",
-  "browserHash": "3b845cf8",
+  "browserHash": "23f17174",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "e8b235e7",
+      "fileHash": "01d2400b",
       "needsInterop": true
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "97ad355a",
+      "fileHash": "5f08c3a4",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "a9e08df9",
+      "fileHash": "3f3d9c47",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "113792ca",
+      "fileHash": "4ca0703d",
       "needsInterop": true
     },
     "@tanstack/react-form": {
       "src": "../../node_modules/@tanstack/react-form/dist/esm/index.js",
       "file": "@tanstack_react-form.js",
-      "fileHash": "8e09aa22",
+      "fileHash": "dc93bf89",
       "needsInterop": false
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "bd546415",
+      "fileHash": "c618d450",
       "needsInterop": true
     },
     "react-error-boundary": {
       "src": "../../node_modules/react-error-boundary/dist/react-error-boundary.development.esm.js",
       "file": "react-error-boundary.js",
-      "fileHash": "900b47b8",
+      "fileHash": "7eff0927",
+      "needsInterop": false
+    },
+    "react-native": {
+      "src": "../../node_modules/react-native-web/dist/index.js",
+      "file": "react-native.js",
+      "fileHash": "8a9a87ea",
       "needsInterop": false
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "c230971e",
+      "fileHash": "aac7e6c7",
       "needsInterop": false
     },
     "zod": {
       "src": "../../node_modules/zod/index.js",
       "file": "zod.js",
-      "fileHash": "df0b6a25",
+      "fileHash": "9d51e978",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-FVA2N2Y2": {
-      "file": "chunk-FVA2N2Y2.js"
+    "chunk-UB6JJZ3L": {
+      "file": "chunk-UB6JJZ3L.js"
     },
-    "chunk-MIR64CGG": {
-      "file": "chunk-MIR64CGG.js"
+    "chunk-M7AOVBVS": {
+      "file": "chunk-M7AOVBVS.js"
     },
-    "chunk-UI7CYM7W": {
-      "file": "chunk-UI7CYM7W.js"
+    "chunk-NMHTHODX": {
+      "file": "chunk-NMHTHODX.js"
     },
-    "chunk-ATIRDPC2": {
-      "file": "chunk-ATIRDPC2.js"
+    "chunk-YUY53GMT": {
+      "file": "chunk-YUY53GMT.js"
+    },
+    "chunk-26MGONGX": {
+      "file": "chunk-26MGONGX.js"
     }
   }
 }

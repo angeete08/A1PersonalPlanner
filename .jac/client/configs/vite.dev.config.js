@@ -166,7 +166,7 @@ function jacBuildErrorOverlay() {
 
 /**
  * Vite DEV configuration for HMR mode
- * Proxies API routes to Python server at localhost:8011
+ * Proxies API routes to Python server at localhost:8003
  */
 export default defineConfig({
   base: "/",
@@ -209,55 +209,55 @@ export default defineConfig({
     },
     proxy: {
       "/api": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/walker": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/function": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/user": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/introspect": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/static": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/docs": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/openapi.json": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/healthz": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/admin": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/graph": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/redoc": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
       "/assets": {
-        target: "http://localhost:8011",
+        target: "http://localhost:8003",
         changeOrigin: true,
       },
     },
@@ -265,11 +265,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@jac/runtime": path.resolve(buildDir, "web/compiled/client_runtime.js"),
-      "@jac/desktop": path.resolve(buildDir, "web/compiled/desktop_api.js"),
-      "@jac/mobui": path.resolve(buildDir, "web/compiled/client_mobui.js"),
+      "@jac/runtime": path.resolve(buildDir, "mobile/compiled/client_runtime.js"),
+      "@jac/desktop": path.resolve(buildDir, "mobile/compiled/desktop_api.js"),
+      "@jac/mobui": path.resolve(buildDir, "mobile/compiled/client_mobui.js"),
       "react-native": "react-native-web",
-      "@jac-client/assets": path.resolve(buildDir, "web/compiled/assets"),
+      "@jac-client/assets": path.resolve(buildDir, "mobile/compiled/assets"),
     },
     extensions: [".mjs", ".js", ".mts", ".ts", ".jsx", ".tsx", ".json"],
 
