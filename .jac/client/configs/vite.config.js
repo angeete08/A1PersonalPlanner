@@ -51,7 +51,7 @@ export default defineConfig({
     sourcemap: true, // Enable source maps for better error messages
 
     rollupOptions: {
-      input: path.resolve(buildDir, "compiled/_entry.js"), // your compiled entry file
+      input: path.resolve(buildDir, "mobile/compiled/_entry.js"), // your compiled entry file
       output: {
         entryFileNames: "client.[hash].js", // name of the final js file
         assetFileNames: (assetInfo) => assetInfo.name?.endsWith('.css') ? 'styles.css' : '[name].[ext]',
@@ -61,16 +61,17 @@ export default defineConfig({
         },
       },
     },
-    outDir: path.resolve(buildDir, "dist"), // final bundled output
+    outDir: path.resolve(buildDir, "mobile/dist"), // final bundled output
     emptyOutDir: true,
   },
   publicDir: false,
   resolve: {
       alias: {
-        "@jac/runtime": path.resolve(buildDir, "compiled/client_runtime.js"),
-      "@jac/desktop": path.resolve(buildDir, "compiled/desktop_api.js"),
-      "@jac/mobui": path.resolve(buildDir, "compiled/client_mobui.js"),
-        "@jac-client/assets": path.resolve(buildDir, "compiled/assets"),
+        "@jac/runtime": path.resolve(buildDir, "mobile/compiled/client_runtime.js"),
+      "@jac/desktop": path.resolve(buildDir, "mobile/compiled/desktop_api.js"),
+      "@jac/mobui": path.resolve(buildDir, "mobile/compiled/client_mobui.js"),
+      "react-native": "react-native-web",
+        "@jac-client/assets": path.resolve(buildDir, "mobile/compiled/assets"),
       },
       extensions: [".mjs", ".js", ".mts", ".ts", ".jsx", ".tsx", ".json"],
 

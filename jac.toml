@@ -1,3 +1,15 @@
 [project]
 name = "a1personalplanner"
+default-app = "web"
+
+[apps.web]
 kind = "web-app"
+entry-point = "main.jac"
+
+[apps.mobile]
+kind = "mobile"
+path = "mobile"
+
+[dependencies.npm]
+react-native = "latest"
+react-native-web = "latest"

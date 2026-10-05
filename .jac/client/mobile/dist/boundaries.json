@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "boundaries": {
+    "[\"web\",\"tasks.jac\",\"func\",\"add_task\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "add_task",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {
+        "name": "str",
+        "description": "str",
+        "due_at": "str"
+      },
+      "result": "list[dict[str, str]]",
+      "native_contract": {},
+      "unchecked": []
+    },
+    "[\"web\",\"tasks.jac\",\"func\",\"get_tasks\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "get_tasks",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {},
+      "result": "list[dict[str, str]]",
+      "native_contract": {},
+      "unchecked": []
+    },
+    "[\"web\",\"tasks.jac\",\"func\",\"toggle_task_status\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "toggle_task_status",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {
+        "task_id": "str"
+      },
+      "result": "list[dict[str, str]]",
+      "native_contract": {},
+      "unchecked": []
+    }
+  },
+  "effects": {
+    "[\"web\",\"tasks.jac\",\"func\",\"get_tasks\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "get_tasks",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    },
+    "[\"web\",\"tasks.jac\",\"func\",\"add_task\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "add_task",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": [
+        "Task"
+      ]
+    },
+    "[\"web\",\"tasks.jac\",\"func\",\"toggle_task_status\"]": {
+      "app": "web",
+      "module": "tasks.jac",
+      "kind": "func",
+      "name": "toggle_task_status",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    }
+  },
+  "native_host_imports": {}
+}

@@ -265,10 +265,11 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@jac/runtime": path.resolve(buildDir, "compiled/client_runtime.js"),
-      "@jac/desktop": path.resolve(buildDir, "compiled/desktop_api.js"),
-      "@jac/mobui": path.resolve(buildDir, "compiled/client_mobui.js"),
-      "@jac-client/assets": path.resolve(buildDir, "compiled/assets"),
+      "@jac/runtime": path.resolve(buildDir, "mobile/compiled/client_runtime.js"),
+      "@jac/desktop": path.resolve(buildDir, "mobile/compiled/desktop_api.js"),
+      "@jac/mobui": path.resolve(buildDir, "mobile/compiled/client_mobui.js"),
+      "react-native": "react-native-web",
+      "@jac-client/assets": path.resolve(buildDir, "mobile/compiled/assets"),
     },
     extensions: [".mjs", ".js", ".mts", ".ts", ".jsx", ".tsx", ".json"],
 
